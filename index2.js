@@ -40,3 +40,5 @@ arr.sort((a,b)=>{
       return 0;
   }
 });
+let para=document.getElementById("arr");
+para.innerHTML=arr;
