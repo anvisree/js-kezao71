@@ -31,5 +31,12 @@ let arr = [
   },
 ];
 arr.sort((a,b)=>{
-  a.(biology+chemistry) - b.(biology+chemistry)
-})
+  let dif=(a.biology+a.chemistry) - (b.biology+b.chemistry);
+  if(dif<0){
+      return -1;
+  }else if(dif>0){
+      return 1;
+  }else{
+      return 0;
+  }
+});
